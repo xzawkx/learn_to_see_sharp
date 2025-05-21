@@ -13,5 +13,7 @@ public static class Program
         _2015.Day1.Puzzle2();
         _2015.Day2.Puzzle1();
         _2015.Day2.Puzzle2();
+        _2015.Day3.Puzzle1();
+        _2015.Day3.Puzzle2();
     }
 }
