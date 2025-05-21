@@ -5,9 +5,8 @@ public static class Day1
     private const string Puzzle1FilePath = @"2015\2015_1_1.txt";
     private static int _puzzle2BasementCharacterIndex;
     
-    public static void Puzzle1()
+    public static Task Puzzle1()
     {
-        Console.WriteLine("Day 1 Puzzle 1 of 2015");
         var sFileFullPath = Path.Combine(Program.CurrentDirectory, Puzzle1FilePath);
 
         using var reader = new StreamReader(sFileFullPath);
@@ -30,12 +29,13 @@ public static class Day1
         
         var nResult = stack.Count;
         var direction = stack.Peek() == '(' ? "up" : "down";
-        Console.WriteLine($"Result: {nResult} floors {direction}");
+        Console.WriteLine($"Day 1 Puzzle 1 of 2015\nResult: {nResult} floors {direction}");
+        return Task.CompletedTask;
     }
     
-    public static void Puzzle2()
+    public static Task Puzzle2()
     {
-        Console.WriteLine("Day 1 Puzzle 2 of 2015");
-        Console.WriteLine($"Result: Santa Enters Basement at {_puzzle2BasementCharacterIndex}");
+        Console.WriteLine($"Day 1 Puzzle 2 of 2015\nResult: Santa Enters Basement at {_puzzle2BasementCharacterIndex}");
+        return Task.CompletedTask;
     }
 }

@@ -10,9 +10,8 @@ public static class Day3
         return $"{x}-{y}";
     }
     
-    public static void Puzzle1()
+    public static Task Puzzle1()
     {
-        Console.WriteLine("Day 3 Puzzle 1 of 2015");
         var x= 0;
         var y = 0;
         _visited1[ToString(x,y)] = true;
@@ -34,12 +33,12 @@ public static class Day3
             _visited1[ToString(x,y)] = true;
         }
         
-        Console.WriteLine($"Result: {_visited1.Count} houses were visited");
+        Console.WriteLine($"Day 3 Puzzle 1 of 2015\nResult: {_visited1.Count} houses were visited");
+        return Task.CompletedTask;
     }
     
-    public static void Puzzle2()
+    public static Task Puzzle2()
     {
-        Console.WriteLine("Day 3 Puzzle 2 of 2015");
         var x1= 0;
         var y1 = 0;
         var x2= 0;
@@ -81,6 +80,7 @@ public static class Day3
 
         }
         
-        Console.WriteLine($"Result: {_visited2.Count} houses were visited");
+        Console.WriteLine($"Day 3 Puzzle 2 of 2015\nResult: {_visited2.Count} houses were visited");
+        return Task.CompletedTask;
     }
 }

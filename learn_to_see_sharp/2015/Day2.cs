@@ -8,9 +8,8 @@ public static class Day2
 
     private static List<List<int>> _presents = [];
 
-    public static void Puzzle1()
+    public static Task Puzzle1()
     {
-        Console.WriteLine("Day 2 Puzzle 1 of 2015");
         var sFileFullPath = Path.Combine(Program.CurrentDirectory, Puzzle1FilePath);
         var reader = new StreamReader(sFileFullPath);
         var nResult = 0;
@@ -31,12 +30,12 @@ public static class Day2
             nResult += n[1] * Math.Min(n[0], n[2]);
         }
 
-        Console.WriteLine($"Result: {nResult} square feet of wrapping paper");
+        Console.WriteLine($"Day 2 Puzzle 1 of 2015\nResult: {nResult} square feet of wrapping paper");
+        return Task.CompletedTask;
     }
 
-    public static void Puzzle2()
+    public static Task Puzzle2()
     {
-        Console.WriteLine("Day 2 Puzzle 2 of 2015");
         
         var nResult = 0;
         
@@ -55,6 +54,7 @@ public static class Day2
             nResult += present[0] * present[1] * present[2];
         }
         
-        Console.WriteLine($"Result: {nResult} square feet of ribbon");
+        Console.WriteLine($"Day 2 Puzzle 2 of 2015\nResult: {nResult} square feet of ribbon");
+        return Task.CompletedTask;
     }
 }
