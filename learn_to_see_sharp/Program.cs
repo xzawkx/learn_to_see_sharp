@@ -18,6 +18,8 @@ public static class Program
             _2015.Day3.Puzzle2,
             _2015.Day4.Puzzle1,
             _2015.Day4.Puzzle2,
+            _2015.Day5.Puzzle1,
+            _2015.Day5.Puzzle2,
         };
     
         Parallel.ForEach(puzzles, puzzle => puzzle().Wait());
